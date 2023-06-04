@@ -1,0 +1,50 @@
+GET http://localhost:1337/cart-items
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjg0MzUxNjUwLCJleHAiOjE2ODY5NDM2NTB9.s6nYHwwgQlk-V6L-lUEBVk5h-yqpbGn-UcvFGAyKJ_o
+
+### 
+POST http://localhost:1337/cart-items
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjg0MzUxNjUwLCJleHAiOjE2ODY5NDM2NTB9.s6nYHwwgQlk-V6L-lUEBVk5h-yqpbGn-UcvFGAyKJ_o
+Content-Type: application/json
+
+{
+  "product": 2,
+  "quantity": 1
+}
+
+### 
+DELETE  http://localhost:1337/cart-items/33
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjg0MzUxNjUwLCJleHAiOjE2ODY5NDM2NTB9.s6nYHwwgQlk-V6L-lUEBVk5h-yqpbGn-UcvFGAyKJ_o
+Content-Type: application/json
+
+###
+
+POST  http://localhost:1337/auth/local
+Content-Type: application/json
+
+{
+ "identifier": "alice@example.com",
+ "password": "Alice123" 
+}
+
+### 
+GET http://localhost:1337/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjc1NzcyNjYyLCJleHAiOjE2NzgzNjQ2NjJ9.y_lEul-LpkLHAiBDU6NqzU_HvpLb4g0iFpo7Z9Jsj8A
+
+### 
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+ "email": "alice@example.com",
+ "password": "Alice123" 
+}
+
+### 
+POST  http://localhost:1337/auth/local/register
+Content-Type: application/json
+
+{
+  "username": "Charlie",
+ "email": "charlie@example.com",
+ "password": "Charlie123" 
+}

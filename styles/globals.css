@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.btn{
+  background-color: rgb(193, 16, 16);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.btn:hover{
+  transform: scale(1.02);
+  background-color: rgb(216, 14, 14);
+}
